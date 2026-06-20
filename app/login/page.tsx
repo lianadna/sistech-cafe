@@ -3,13 +3,14 @@ import Footer from "../components/Footer";
 
 export default function LoginPage() {
   return (
-    <>
+    // Background diubah menjadi #fffbfa polos seragam dengan halaman lainnya
+    <div className="min-h-screen bg-[#fffbfa] text-gray-800">
       <Navbar />
 
-      <main className="min-h-screen bg-gradient-to-b from-pink-50 to-white px-6 py-12 md:px-12 lg:px-16">
-        <div className="mx-auto grid max-w-6xl overflow-hidden rounded-[2rem] bg-white shadow-2xl lg:grid-cols-2">
+      <main className="relative z-10 px-6 py-12 md:px-12 lg:px-16">
+        <div className="mx-auto grid max-w-6xl overflow-hidden rounded-[2rem] bg-white shadow-2xl shadow-[#FF74B1]/10 lg:grid-cols-2 border border-gray-100">
           {/* Left panel */}
-          <div className="flex flex-col justify-between bg-pink-400 p-8 text-white md:p-12">
+          <div className="flex flex-col justify-between bg-[#FF74B1] p-8 text-white md:p-12">
             <div>
               <span className="rounded-full bg-white/20 px-4 py-2 text-sm font-medium">
                 Welcome Back
@@ -20,14 +21,14 @@ export default function LoginPage() {
                 <span className="block">experience starts here</span>
               </h1>
 
-              <p className="mt-6 max-w-lg text-base leading-8 text-pink-50 sm:text-lg">
+              <p className="mt-6 max-w-lg text-base leading-8 text-white/90 sm:text-lg">
                 Sign in to access your account, discover exclusive promos, save your
                 favorite drinks, and stay connected with the warm world of Sistech Cafe.
               </p>
             </div>
 
-            <div className="mt-10 rounded-3xl bg-white/15 p-6 backdrop-blur">
-              <p className="text-sm uppercase tracking-wide text-pink-100">
+            <div className="mt-10 rounded-3xl bg-white/10 p-6 backdrop-blur-sm border border-white/10">
+              <p className="text-sm uppercase tracking-wide text-white/80 font-semibold">
                 Member Benefit
               </p>
               <h2 className="mt-3 text-2xl font-bold">
@@ -39,7 +40,7 @@ export default function LoginPage() {
           {/* Right panel */}
           <div className="p-8 md:p-12">
             <div className="mx-auto max-w-md">
-              <h2 className="text-3xl font-bold text-gray-800">Login to your account</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Login to your account</h2>
               <p className="mt-3 text-gray-600">
                 Enter your details below to continue your Sistech Cafe journey.
               </p>
@@ -52,14 +53,14 @@ export default function LoginPage() {
                   <input
                     type="email"
                     placeholder="you@example.com"
-                    className="w-full rounded-2xl border border-gray-300 px-4 py-3 outline-none transition focus:border-pink-400"
+                    className="w-full rounded-2xl border border-gray-300 px-4 py-3 outline-none transition focus:border-[#FF74B1]"
                   />
                 </div>
 
                 <div>
                   <div className="mb-2 flex items-center justify-between">
                     <label className="text-sm font-medium text-gray-700">Password</label>
-                    <button className="text-sm font-medium text-pink-400">
+                    <button className="text-sm font-medium text-[#FF74B1] hover:underline">
                       Forgot password?
                     </button>
                   </div>
@@ -67,11 +68,11 @@ export default function LoginPage() {
                   <input
                     type="password"
                     placeholder="Enter your password"
-                    className="w-full rounded-2xl border border-gray-300 px-4 py-3 outline-none transition focus:border-pink-400"
+                    className="w-full rounded-2xl border border-gray-300 px-4 py-3 outline-none transition focus:border-[#FF74B1]"
                   />
                 </div>
 
-                <button className="w-full rounded-2xl bg-pink-400 py-3 font-semibold text-white transition hover:bg-pink-500">
+                <button className="w-full rounded-2xl bg-[#FF74B1] py-3 font-semibold text-white transition hover:bg-[#e5689f] shadow-md shadow-[#FF74B1]/20">
                   Sign In
                 </button>
               </div>
@@ -93,7 +94,7 @@ export default function LoginPage() {
 
               <p className="mt-8 text-center text-sm text-gray-500">
                 Don’t have an account?{" "}
-                <span className="font-medium text-pink-400">Create one</span>
+                <span className="font-medium text-[#FF74B1] cursor-pointer hover:underline">Create one</span>
               </p>
             </div>
           </div>
@@ -101,6 +102,6 @@ export default function LoginPage() {
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 }
