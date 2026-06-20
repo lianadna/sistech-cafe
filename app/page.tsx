@@ -12,7 +12,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen overflow-hidden bg-[#fffbfa] relative text-gray-800">
+    <main className="min-h-screen bg-[#fffbfa] relative text-gray-800">
       
       <style>{`
         @keyframes scroll {
@@ -32,18 +32,18 @@ export default function Home() {
 
       <div className="absolute top-24 left-10 grid grid-cols-3 gap-2 opacity-30">
         {[...Array(15)].map((_, i) => (
-          <div key={i} className="h-1.5 w-1.5 rounded-full bg-pink-400"></div>
+          <div key={i} className="h-1.5 w-1.5 rounded-full bg-[#FF74B1]"></div>
         ))}
       </div>
       <div className="absolute right-12 top-28 text-yellow-400 text-2xl font-bold">✦</div>
-      <div className="absolute right-[45%] bottom-1/3 text-pink-300 text-xl rotate-12">📐</div>
+      <div className="absolute right-[45%] bottom-1/3 text-[#FF74B1]/50 text-xl rotate-12">📐</div>
 
       {/* Hero Section */}
       <section className="relative mx-auto max-w-7xl px-6 py-12 md:px-12 lg:px-16 lg:py-16">
         <div className="flex flex-col items-center justify-between gap-12 lg:flex-row lg:items-center">
           
           <div className="relative w-full max-w-xl text-center lg:text-left z-10">
-            <span className="inline-flex items-center gap-2 rounded-full bg-pink-50 border border-pink-100 px-4 py-2 text-sm font-medium text-pink-500 shadow-sm">
+            <span className="inline-flex items-center gap-2 rounded-full bg-[#FF74B1]/10 border border-[#FF74B1]/20 px-4 py-2 text-sm font-medium text-[#FF74B1] shadow-sm">
               ☕ Women-Owned Cafe
             </span>
 
@@ -118,10 +118,10 @@ export default function Home() {
       </section>
 
       <section className="relative mx-auto max-w-7xl px-6 pb-12 lg:px-16 z-20 mt-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 rounded-[2.5rem] bg-white px-10 py-8 shadow-xl shadow-pink-100/30 border border-gray-100/70">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 rounded-[2.5rem] bg-white px-10 py-8 shadow-xl shadow-[#FF74B1]/10 border border-gray-100/70">
           
           <div className="flex items-center gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-pink-50 text-xl">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#FF74B1]/10 text-xl">
               ☕
             </div>
             <div>
@@ -131,7 +131,7 @@ export default function Home() {
           </div>
 
           <div className="flex items-center gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-pink-50 text-xl">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#FF74B1]/10 text-xl">
               ❤️
             </div>
             <div>
@@ -141,7 +141,7 @@ export default function Home() {
           </div>
 
           <div className="flex items-center gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-pink-50 text-xl">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#FF74B1]/10 text-xl">
               👥
             </div>
             <div>
@@ -151,7 +151,7 @@ export default function Home() {
           </div>
 
           <div className="flex items-center gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-pink-50 text-xl">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#FF74B1]/10 text-xl">
               🌱
             </div>
             <div>
@@ -197,4 +197,3 @@ export default function Home() {
     </main>
   );
 }
-
