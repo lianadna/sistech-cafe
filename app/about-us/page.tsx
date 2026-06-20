@@ -24,7 +24,6 @@ const stats = [
 
 export default function AboutUsPage() {
   return (
-    // Background #fffbfa polos, seragam dengan Halaman Menu
     <div className="min-h-screen bg-[#fffbfa] text-gray-800">
       <Navbar />
 
@@ -37,7 +36,6 @@ export default function AboutUsPage() {
                 About Sistech Cafe
               </span>
 
-              {/* Judul hitam pekat (text-gray-900) */}
               <h1 className="mt-6 text-4xl font-extrabold leading-tight text-gray-900 sm:text-5xl lg:text-6xl">
                 A Cafe Built on
                 <span className="block text-[#FF74B1] mt-2">Coffee, Care, and Community</span>
@@ -56,7 +54,6 @@ export default function AboutUsPage() {
               </p>
             </div>
 
-            {/* BAGIAN GAMBAR CAFE (Menggunakan link baru yang lebih stabil) */}
             <div className="rounded-3xl bg-white p-3 shadow-2xl shadow-[#FF74B1]/10 border border-gray-100 overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?q=80&w=800&auto=format&fit=crop" 

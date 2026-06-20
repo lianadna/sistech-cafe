@@ -50,7 +50,6 @@ const categories = ["All", "Hot Coffee", "Milk Coffee", "Non Coffee", "Pastry"];
 
 export default function MenuPage() {
   return (
-    // Background polos seragam, seluruh tag ornamen melayang sudah dihapus
     <div className="min-h-screen bg-[#fffbfa] text-gray-800">
       <Navbar />
 
@@ -63,7 +62,6 @@ export default function MenuPage() {
 
             <div className="mt-6 grid items-center gap-10 lg:grid-cols-2">
               <div>
-                {/* Judul disamakan jadi text-gray-900 agar hitam pekat */}
                 <h1 className="text-5xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-6xl lg:text-[4.5rem]">
                   Crafted Drinks,
                   <span className="block text-[#FF74B1] mt-2">Fresh Pastries</span>

@@ -28,15 +28,9 @@ export default function Home() {
         }
       `}</style>
 
-      <Navbar />
-
-      <div className="absolute top-24 left-10 grid grid-cols-3 gap-2 opacity-30">
-        {[...Array(15)].map((_, i) => (
-          <div key={i} className="h-1.5 w-1.5 rounded-full bg-[#FF74B1]"></div>
-        ))}
+      <div className="sticky top-0 z-50 w-full bg-[#fffbfa]/90 backdrop-blur-md border-b border-gray-100">
+        <Navbar />
       </div>
-      <div className="absolute right-12 top-28 text-yellow-400 text-2xl font-bold">✦</div>
-      <div className="absolute right-[45%] bottom-1/3 text-[#FF74B1]/50 text-xl rotate-12">📐</div>
 
       {/* Hero Section */}
       <section className="relative mx-auto max-w-7xl px-6 py-12 md:px-12 lg:px-16 lg:py-16">
@@ -117,11 +111,12 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Info Cards */}
       <section className="relative mx-auto max-w-7xl px-6 pb-12 lg:px-16 z-20 mt-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 rounded-[2.5rem] bg-white px-10 py-8 shadow-xl shadow-[#FF74B1]/10 border border-gray-100/70">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 rounded-[2.5rem] bg-white px-10 py-8 shadow-xl shadow-[#FF74B1]/5 border border-gray-100/70">
           
           <div className="flex items-center gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#FF74B1]/10 text-xl">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#FF74B1]/10 text-xl">
               ☕
             </div>
             <div>
@@ -131,7 +126,7 @@ export default function Home() {
           </div>
 
           <div className="flex items-center gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#FF74B1]/10 text-xl">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#FF74B1]/10 text-xl">
               ❤️
             </div>
             <div>
@@ -141,7 +136,7 @@ export default function Home() {
           </div>
 
           <div className="flex items-center gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#FF74B1]/10 text-xl">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#FF74B1]/10 text-xl">
               👥
             </div>
             <div>
@@ -151,7 +146,7 @@ export default function Home() {
           </div>
 
           <div className="flex items-center gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#FF74B1]/10 text-xl">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#FF74B1]/10 text-xl">
               🌱
             </div>
             <div>
@@ -163,6 +158,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Partners Marquee */}
       <section className="relative mx-auto w-full max-w-7xl px-6 py-20 text-center lg:px-16 border-t border-gray-100 mt-12 bg-white rounded-t-[3rem] shadow-[0_-20px_40px_rgba(0,0,0,0.02)]">
         <h3 className="text-sm font-bold uppercase tracking-widest text-[#FF74B1]">Our Community Partners</h3>
         <h2 className="mt-4 text-3xl font-extrabold text-gray-900 sm:text-4xl">Brewing together with the best.</h2>
